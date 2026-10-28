@@ -10,10 +10,10 @@ header {
     text-align: center; 
 }
 
-header h1 {
-    font-size: 36px; 
-    font-weight: bold; 
-    color: white; 
+#main-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
 }
 
 h2 {
@@ -35,4 +35,48 @@ footer {
 footer a { 
     color: #4c5b66; 
     font-weight: bold;
+}
+
+/* Inclui padding e bordas no cálculo da largura */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    padding: 24px 16px;
+}
+
+/* Centraliza e limita a largura do conteúdo */
+main {
+    max-width: 900px;
+    margin: 32px auto;
+    padding: 24px;
+}
+
+section {
+    margin-bottom: 32px;
+}
+
+/* Mantém a imagem dentro do espaço disponível, sem distorção */
+#introduction img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Destaca um hobby usando uma classe */
+.highlight-hobby {
+    color: #192b38;
+    background-color: #dce5ed;
+    font-weight: bold;
+    padding: 8px;
+    border-radius: 6px;
+}
+
+footer {
+    padding: 24px 16px;
 }
